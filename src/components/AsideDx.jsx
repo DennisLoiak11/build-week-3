@@ -13,48 +13,6 @@ function AsideDx(){
                     <p className="text-secondary">Imprenditore</p>
                     <button className="btn border border-2 text-secondary">Messaggio</button>
                 </div>
-                <hr />
-                <div className="mb-1 mt-1">
-                    <h3>Paolo Stella</h3>
-                    <p className="text-secondary">Imprenditore</p>
-                    <button className="btn border border-2 text-secondary">Messaggio</button>
-                </div>
-                <hr />
-                <div className="mb-1 mt-1">
-                    <h3>Paolo Stella</h3>
-                    <p className="text-secondary">Imprenditore</p>
-                    <button className="btn border border-2 text-secondary">Messaggio</button>
-                </div>
-                <hr />
-                <div className="mb-1 mt-1">
-                    <h3>Paolo Stella</h3>
-                    <p className="text-secondary">Imprenditore</p>
-                    <button className="btn border border-2 text-secondary">Messaggio</button>
-                </div>
-                <hr />
-                <div className="mb-1 mt-1">
-                    <h3>Paolo Stella</h3>
-                    <p className="text-secondary">Imprenditore</p>
-                    <button className="btn border border-2 text-secondary">Messaggio</button>
-                </div>
-                <hr />
-                <div className="mb-1 mt-1">
-                    <h3>Paolo Stella</h3>
-                    <p className="text-secondary">Imprenditore</p>
-                    <button className="btn border border-2 text-secondary">Messaggio</button>
-                </div>
-                <hr />
-                <div className="mb-1 mt-1">
-                    <h3>Paolo Stella</h3>
-                    <p className="text-secondary">Imprenditore</p>
-                    <button className="btn border border-2 text-secondary">Messaggio</button>
-                </div>
-                <hr />
-                <div className="mb-1 mt-1">
-                    <h3>Paolo Stella</h3>
-                    <p className="text-secondary">Imprenditore</p>
-                    <button className="btn border border-2 text-secondary">Messaggio</button>
-                </div>
             </div>
         </div>
     )
