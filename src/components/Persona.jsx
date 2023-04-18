@@ -1,20 +1,22 @@
-import { useEffect } from "react";
-import { Badge, Col, Row } from "react-bootstrap";
 import img from "../img/Studio-Ghibli.jpg";
 import badge from "../img/marvel-snap.jpg";
-import { getMeAction } from "../redux/actions";
+import { Badge, Col, Row } from "react-bootstrap";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { getPersonaAction } from "../redux/actions";
+import { useParams } from "react-router-dom";
 
-const Info = () => {
+const Persona = () => {
+  const params = useParams();
   const dispatch = useDispatch();
-
+  const personaUrl = `https://striveschool-api.herokuapp.com/api/profile/${params._id}`;
   useEffect(() => {
-    dispatch(getMeAction());
+    dispatch(getPersonaAction(personaUrl));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
-  const me = useSelector(state => state.me.content);
-  console.log(me);
+  const persona = useSelector(state => state.persona.content);
+  console.log(persona);
+  console.log(params);
 
   return (
     <>
@@ -26,11 +28,11 @@ const Info = () => {
         <Row className="prifle-info">
           <Col md={8}>
             <h2 className="fw-bold">
-              {me.name} {me.surname}
+              {persona.name} {persona.surname}
             </h2>
-            <p>{me.bio}</p>
+            <p>{persona.bio}</p>
             <p>
-              {me.area} <span>- Informazioni di contatto</span>
+              {persona.area} <span>- Informazioni di contatto</span>
             </p>
             <p>Più di 500 collegamenti</p>
             <div className="d-flex">
@@ -51,4 +53,4 @@ const Info = () => {
   );
 };
 
-export default Info;
+export default Persona;
