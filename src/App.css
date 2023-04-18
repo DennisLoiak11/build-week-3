@@ -1,3 +1,14 @@
 h2, h3, p{
   font-size: 1rem;
 }
+
+button{
+  border-radius: 20px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+button:hover{
+  background-color: lightgray;
+  border: 5px solid;
+}

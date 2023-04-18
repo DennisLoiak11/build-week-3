@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-
+import '../App.css';
+import { LockFill } from 'react-bootstrap-icons';
 
 const Prova = () => {
   const endpoint = "https://striveschool-api.herokuapp.com/api/profile/";
@@ -30,19 +31,23 @@ const Prova = () => {
   }, []);
   return (
     <>
-      <section>
+      <section className="col-3 border rounded">
+      
+      <h2 className="m-3">Altri profili consultati</h2>
         {persone.slice(5, 9).map(persona => (
-          <div className="col-3 border rounded">
-          <h2 className="m-3">Altri profili consultati</h2>
           <div className="m-3">
               <div className="mb-1 mt-1">
-                  <img className="w-25 radius" src={persona.image} alt="" />
+                <div className="d-flex mt-2 mb-2">
+                  <img className="w-25 rounded-circle me-2" src={persona.image} alt="" />
+                  <div className="">
                   <h3>{persona.name}{persona.surname}</h3>
                   <p className="text-secondary">{persona.title}</p>
-                  <button className="btn border border-2 text-secondary">Messaggio</button>
+                  </div>
+                </div>
+                  <button className="border border-1 text-secondary"><LockFill className="ms-1 me-1 mb-1" />Messaggio</button>
               </div>
+              <hr />
           </div>
-      </div>
         ))}
       </section>
     </>
