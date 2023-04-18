@@ -31,7 +31,7 @@ const Prova = () => {
   }, []);
   return (
     <>
-      <section className="col-3 border rounded">
+      <section className="col-3 border rounded d-none d-lg-block">
       
       <h2 className="m-3">Altri profili consultati</h2>
         {persone.slice(5, 9).map(persona => (
