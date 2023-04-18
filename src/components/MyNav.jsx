@@ -8,6 +8,7 @@ import Form from 'react-bootstrap/Form';
 import { FaHome } from 'react-icons/fa';
 import { BsPeopleFill, BsBagDashFill, BsBellFill } from "react-icons/bs";
 import { RiMessage3Fill } from "react-icons/ri";
+import Canvas from './Canvas'
 
 const MyNav = () => {
     return (
@@ -22,34 +23,34 @@ const MyNav = () => {
                 </div>
                 
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse className="me-0 justify-content-around" id="basic-navbar-nav">
+                <Navbar.Collapse className="me-0 justify-content-around align-items-center" id="basic-navbar-nav">
                     <Nav>
                         <div className='text-center me-4'>
-                        <FaHome className='align-self-center fs-3 text-secondary'/>
-                        <Nav.Link className='pt-0' href="#home">Home</Nav.Link>
+                        <FaHome className='align-self-center fs-3 text-secondary fs-6 nav-icon'/>
+                        <p  className='nav-text pt-0' href="#home">Home</p>
                         </div>
                         
                         <div className='text-center me-4'>
-                        <BsPeopleFill className='align-self-center fs-3 text-secondary'/>
-                        <Nav.Link className='pt-0' href="#link">Rete</Nav.Link>
+                        <BsPeopleFill className='align-self-center fs-3 text-secondary nav-icon'/>
+                        <p  className='nav-text pt-0' href="#link">Rete</p>
                         </div>
                         
                         <div className='text-center me-4'>
-                        <BsBagDashFill className='align-self-center fs-3 text-secondary'/>
-                        <Nav.Link className='pt-0' href="#link">Lavoro</Nav.Link>
+                        <BsBagDashFill className='align-self-center fs-3 text-secondary nav-icon'/>
+                        <p  className='nav-text pt-0' href="#link">Lavoro</p>
                         </div>
 
                         <div className='text-center me-4'>
-                            <RiMessage3Fill  className='align-self-center fs-3 text-secondary'/>
-                        <Nav.Link className='pt-0' href="#link">Messaggistica</Nav.Link>    
+                            <RiMessage3Fill  className='align-self-center fs-3 text-secondary nav-icon'/>
+                        <p  className='nav-text pt-0' href="#link">Messaggistica</p>    
                         </div>
 
                         <div className='text-center me-4'>
-                            <BsBellFill  className='align-self-center fs-3 text-secondary'/>
-                        <Nav.Link className='pt-0' href="#link">Notifiche</Nav.Link>
+                            <BsBellFill  className='align-self-center fs-3 text-secondary nav-icon'/>
+                        <p  className='nav-text pt-0' href="#link">Notifiche</p>
                         </div>
 
-                        <NavDropdown title="Tu" id="basic-nav-dropdown">
+                        <NavDropdown className='me-5' title="Tu" id="basic-nav-dropdown">
                             <NavDropdown.Item className='fw-bold' href="#action/3.1">Nome Cognome</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Studente presso Epicode</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
@@ -58,6 +59,7 @@ const MyNav = () => {
 
                             <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                         </NavDropdown>
+                        <Canvas/>
                     </Nav>
                         
                 </Navbar.Collapse>
