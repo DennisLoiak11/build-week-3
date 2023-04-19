@@ -38,6 +38,7 @@ const Prova = () => {
   const persone = useSelector(state => state.persone.content);
   console.log(persone);
 
+  console.log(process.env.REACT_APP_PERSIST_KEY);
   return (
     <>
       <section className="section">

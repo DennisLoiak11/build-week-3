@@ -20,7 +20,7 @@ const Persona = () => {
 
   return (
     <>
-      <section className="container-fluid pb-3 section">
+      <section className="container pb-3 section">
         <div className="profile-imgs">
           <img className="cover-img" src={badge} alt="cover-img" />
           <img className="profile" src={img} alt="profile-img" />

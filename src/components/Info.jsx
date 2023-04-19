@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Badge, Col, Row } from "react-bootstrap";
+import { Badge, Col, Row, Image } from "react-bootstrap";
 import img from "../img/Studio-Ghibli.jpg";
 import badge from "../img/marvel-snap.jpg";
 import { getMeAction } from "../redux/actions";
@@ -20,7 +20,7 @@ const Info = () => {
     <>
       <section className="container-fluid pb-3 section">
         <div className="profile-imgs">
-          <img className="cover-img" src={badge} alt="cover-img" />
+          <Image fluid className="cover-img" src={badge} alt="cover-img" />
           <img className="profile" src={img} alt="profile-img" />
         </div>
         <Row className="prifle-info">
@@ -34,8 +34,8 @@ const Info = () => {
             </p>
             <p>Più di 500 collegamenti</p>
             <div className="d-flex">
-              <Badge>+ Segui</Badge>
-              <Badge>Messaggio</Badge>
+              <Badge className="me-3">+ Segui</Badge>
+              <Badge className="mx-3">Messaggio</Badge>
               <Badge>Altro</Badge>
             </div>
           </Col>
