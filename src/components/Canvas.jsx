@@ -15,7 +15,7 @@ function OffCanvas({ name, ...props }) {
         <>
             <a className='text-decoration-none text-dark' href='#'>
                 <div className='text-center' onClick={handleShow}>
-                    <RiMenuFill className='fs-5 mb-1' />
+                    <RiMenuFill className='fs-5 mb-1'/>
                     <p className='nav-text'>Per le aziende <RiArrowDropDownFill className='fs-5' /></p>
                 </div>
             </a>

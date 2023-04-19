@@ -1,23 +1,22 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import './App.css';
-import logo from './logo.svg';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import MyNav from "./components/MyNav";
 import Main from "./components/Main";
+import Persona from "./components/Persona";
+import MyNav from "./components/MyNav";
 import MyFooter from "./components/MyFooter";
-
 
 function App() {
   return (
     <>
-    <BrowserRouter>
-      <MyNav/>
-          <Routes>
-            <Route path="/" element={<Main/>}/>
-            <Route/>
-          </Routes>
-          <MyFooter/>
-    </BrowserRouter>
+      <BrowserRouter>
+        <MyNav />
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/persona/:id" element={<Persona />} />
+        </Routes>
+        <MyFooter />
+      </BrowserRouter>
     </>
   );
 }
