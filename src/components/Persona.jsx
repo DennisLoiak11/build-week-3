@@ -9,7 +9,7 @@ import { useParams } from "react-router-dom";
 const Persona = () => {
   const params = useParams();
   const dispatch = useDispatch();
-  const personaUrl = `https://striveschool-api.herokuapp.com/api/profile/${params._id}`;
+  const personaUrl = `https://striveschool-api.herokuapp.com/api/profile/${params.id}`;
   useEffect(() => {
     dispatch(getPersonaAction(personaUrl));
     // eslint-disable-next-line react-hooks/exhaustive-deps

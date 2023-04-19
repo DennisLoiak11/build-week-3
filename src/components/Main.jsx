@@ -14,7 +14,7 @@ const Main = () => {
             <PrimoPiano />
             <Attivita />
           </Col>
-          <Col sm={3}>
+          <Col lg={3}>
             <Prova />
           </Col>
         </Row>
