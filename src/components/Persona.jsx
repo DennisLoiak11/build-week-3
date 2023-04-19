@@ -10,17 +10,17 @@ const Persona = () => {
     const params = useParams();
     const dispatch = useDispatch();
     const personaUrl = `https://striveschool-api.herokuapp.com/api/profile/${params.id}`;
-        useEffect(() => {
-            dispatch(getPersonaAction(personaUrl));
-            // eslint-disable-next-line react-hooks/exhaustive-deps
-        }, []);
+    useEffect(() => {
+        dispatch(getPersonaAction(personaUrl));
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
     const persona = useSelector(state => state.persona.content);
     console.log(persona);
     console.log(params);
 
     return (
         <>
-            <section className="container pb-3 section">
+            <section className="container-fluid pb-3 section">
                 <div className="profile-imgs">
                     <img className="cover-img" src={badge} alt="cover-img" />
                     <img className="profile" src={img} alt="profile-img" />
@@ -43,7 +43,7 @@ const Persona = () => {
                     </Col>
                     <Col md={4}>
                         <ul>
-                            <li>https://wwww.aranzulla.it/</li>
+                            <li>https://wwww.aranzulla.it</li>
                             <li>Bocconi University</li>
                         </ul>
                     </Col>

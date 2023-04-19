@@ -5,7 +5,7 @@ import Dropdown from "react-bootstrap/Dropdown";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { DropdownButton } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import {GearFill, QuestionCircleFill, ShieldShaded,} from "react-bootstrap-icons";
+import { GearFill, QuestionCircleFill, ShieldShaded } from "react-bootstrap-icons";
 
 const MyFooter = () => {
     return (
@@ -106,9 +106,7 @@ const MyFooter = () => {
                             </Col>
                         </Row>
                         <Row className="mt-5">
-                            <Col className="text-secondary">
-                                Linkedin Corporation &copy; 2023
-                            </Col>
+                            <Col className="text-secondary">Linkedin Corporation &copy; 2023</Col>
                         </Row>
                     </Row>
                 </Container>
@@ -119,15 +117,10 @@ const MyFooter = () => {
                             <QuestionCircleFill className="mx-2 text-secondary" />
                         </div>
                         <div>
-                            <Link
-                                to="#"
-                                className="text-decoration-none text-secondary fw-bold"
-                            >
+                            <Link to="#" className="text-decoration-none text-secondary fw-bold">
                                 Domande?
                             </Link>
-                            <p className="d-flex text-secondary">
-                                Visita il nostro Centro assistenza.
-                            </p>
+                            <p className="d-flex text-secondary">Visita il nostro Centro assistenza.</p>
                         </div>
                     </Col>
 
@@ -136,10 +129,7 @@ const MyFooter = () => {
                             <GearFill className="mx-2 text-secondary" />
                         </div>
                         <div>
-                            <Link
-                                to="#"
-                                className="text-decoration-none text-secondary fw-bold"
-                            >
+                            <Link to="#" className="text-decoration-none text-secondary fw-bold">
                                 Gestisci il tuo account e la tua privacy
                             </Link>
                             <p className="text-secondary">Vai alle impostazioni</p>
@@ -150,15 +140,10 @@ const MyFooter = () => {
                             <ShieldShaded className="mx-2 text-secondary" />
                         </div>
                         <div>
-                            <Link
-                                to="#"
-                                className="text-decoration-none text-secondary fw-bold"
-                            >
+                            <Link to="#" className="text-decoration-none text-secondary fw-bold">
                                 Trasparenza sui contenuti consigliati
                             </Link>
-                            <p className="text-secondary">
-                                Scopri di più sui contenuti consigliati.
-                            </p>
+                            <p className="text-secondary">Scopri di più sui contenuti consigliati.</p>
                         </div>
                     </Col>
                 </Container>

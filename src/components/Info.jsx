@@ -1,21 +1,36 @@
+import { useEffect } from "react";
 import { Badge, Col, Row } from "react-bootstrap";
 import img from "../img/Studio-Ghibli.jpg";
 import badge from "../img/marvel-snap.jpg";
+import { getMeAction } from "../redux/actions";
+import { useDispatch, useSelector } from "react-redux";
 
 const Info = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getMeAction());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const me = useSelector(state => state.me.content);
+  console.log(me);
+
   return (
     <>
-      <section class="container-fluid pb-3 section">
+      <section className="container-fluid pb-3 section">
         <div className="profile-imgs">
           <img className="cover-img" src={badge} alt="cover-img" />
           <img className="profile" src={img} alt="profile-img" />
         </div>
         <Row className="prifle-info">
           <Col md={8}>
-            <h2 className="fw-bold">Salvatore Aranzulla</h2>
-            <p>Imprenditore e Divulgatore informatico su Aranzulla.it</p>
+            <h2 className="fw-bold">
+              {me.name} {me.surname}
+            </h2>
+            <p>{me.bio}</p>
             <p>
-              Milano, Lombardia, Italia <span>- Informazioni di contatto</span>
+              {me.area} <span>- Informazioni di contatto</span>
             </p>
             <p>Più di 500 collegamenti</p>
             <div className="d-flex">

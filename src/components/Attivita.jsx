@@ -3,7 +3,7 @@ import { Badge, Col, Row } from "react-bootstrap";
 const Attivita = () => {
   return (
     <>
-      <section class="container-fluid py-3 mt-1 section">
+      <section className="container-fluid py-3 mt-1 section">
         <h2>Attività</h2>
         <p>tot follower</p>
         <div className="d-flex">
@@ -20,7 +20,7 @@ const Attivita = () => {
           <Col className="text-end">.. visualizza altro</Col>
         </Row>
       </section>
-      <section class="container-fluid py-3 mt-1 section">
+      <section className="container-fluid py-3 mt-1 section">
         <h2>Formazione</h2>
         <Row>
           <Col>...</Col>
