@@ -2,7 +2,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import Attivita from "./Attivita";
 import Info from "./Info";
 import PrimoPiano from "./PrimoPiano";
-import Prova from "./ProvaFetch";
+import Aside from "./Aside";
 import Experience from "./Experience";
 
 const Main = () => {
@@ -11,17 +11,17 @@ const Main = () => {
       <Container fluid>
         <Row>
           <Col sm={9}>
-            <Info className='rounded' />
-            <PrimoPiano className='rounded' />
-            <Attivita className='rounded' />
+            <Info/>
+            <PrimoPiano/>
+            <Attivita/>
           </Col>
           <Col lg={3}>
-            <Prova className='rounded' />
+            <Aside/>
           </Col>
         </Row>
         <Row>
           <Col sm={9}>
-          <Experience className='rounded'/>
+          <Experience/>
           </Col>
         </Row>
       </Container>

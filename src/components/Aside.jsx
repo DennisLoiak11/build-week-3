@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { LockFill } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
 
-const Prova = () => {
+const Aside = () => {
   //   const endpoint = "https://striveschool-api.herokuapp.com/api/profile/";
   //   const [persone, setPersone] = useState([]);
 
@@ -40,7 +40,7 @@ const Prova = () => {
 
   return (
     <>
-      <section className="section">
+      <section className="section tondo">
         <h2 className="m-3">Altri profili consultati</h2>
         {persone.slice(5, 9).map(persona => (
           <div className="m-3">
@@ -70,4 +70,4 @@ const Prova = () => {
   );
 };
 
-export default Prova;
+export default Aside;

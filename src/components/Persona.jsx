@@ -37,7 +37,7 @@ const Persona = () => {
                         <p>Più di 500 collegamenti</p>
                         <div className="d-flex">
                             <Badge>+ Segui</Badge>
-                            <Badge className="mx-2">Messaggio</Badge>
+                            <Badge>Messaggio</Badge>
                             <Badge>Altro</Badge>
                         </div>
                     </Col>
