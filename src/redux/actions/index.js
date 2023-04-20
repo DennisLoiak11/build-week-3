@@ -11,7 +11,7 @@ export const getPersoneAction = () => {
       let resp = await fetch(endpoint, {
         headers: {
           Authorization:
-            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDNkMDg4YzE4NmE4NzAwMTQzODY3ZTEiLCJpYXQiOjE2ODE3MjE0ODUsImV4cCI6MTY4MjkzMTA4NX0.YAakfz_XOWE0qUDLpCGsBav_D1Vse921HETnb11Nw4Q"
+            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDNmZWZiYmI4MDhkNDAwMTQzMjc0MmQiLCJpYXQiOjE2ODE5MTE3MzksImV4cCI6MTY4MzEyMTMzOX0.kKOR75m9oCvXbfTDAjrm0MKKbFyRZAyxOOa2lSH28wE"
         }
       });
       if (resp.ok) {
@@ -32,7 +32,7 @@ export const getMeAction = () => {
       let resp = await fetch(`${endpoint}me`, {
         headers: {
           Authorization:
-            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDNkMDg4YzE4NmE4NzAwMTQzODY3ZTEiLCJpYXQiOjE2ODE3MjE0ODUsImV4cCI6MTY4MjkzMTA4NX0.YAakfz_XOWE0qUDLpCGsBav_D1Vse921HETnb11Nw4Q"
+            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDNmZWZiYmI4MDhkNDAwMTQzMjc0MmQiLCJpYXQiOjE2ODE5MTE3MzksImV4cCI6MTY4MzEyMTMzOX0.kKOR75m9oCvXbfTDAjrm0MKKbFyRZAyxOOa2lSH28wE"
         }
       });
       if (resp.ok) {

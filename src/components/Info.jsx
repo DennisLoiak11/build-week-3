@@ -18,7 +18,7 @@ const Info = () => {
 
   return (
     <>
-      <section className="container-fluid pb-3 section">
+      <section className="container-fluid pb-3 section tondo">
         <div className="profile-imgs">
           <img className="cover-img" src={badge} alt="cover-img" />
           <img className="profile" src={img} alt="profile-img" />

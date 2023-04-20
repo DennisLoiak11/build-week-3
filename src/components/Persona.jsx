@@ -20,7 +20,7 @@ const Persona = () => {
 
     return (
         <>
-            <section className="container-fluid pb-3 section">
+            <section className="container-fluid pb-3 section tondo">
                 <div className="profile-imgs">
                     <img className="cover-img" src={badge} alt="cover-img" />
                     <img className="profile" src={img} alt="profile-img" />
@@ -37,7 +37,7 @@ const Persona = () => {
                         <p>Più di 500 collegamenti</p>
                         <div className="d-flex">
                             <Badge>+ Segui</Badge>
-                            <Badge>Messaggio</Badge>
+                            <Badge className="mx-2">Messaggio</Badge>
                             <Badge>Altro</Badge>
                         </div>
                     </Col>

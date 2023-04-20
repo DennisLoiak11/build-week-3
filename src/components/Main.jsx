@@ -3,6 +3,7 @@ import Attivita from "./Attivita";
 import Info from "./Info";
 import PrimoPiano from "./PrimoPiano";
 import Prova from "./ProvaFetch";
+import Experience from "./Experience";
 
 const Main = () => {
   return (
@@ -10,12 +11,17 @@ const Main = () => {
       <Container fluid>
         <Row>
           <Col sm={9}>
-            <Info />
-            <PrimoPiano />
-            <Attivita />
+            <Info className='rounded' />
+            <PrimoPiano className='rounded' />
+            <Attivita className='rounded' />
           </Col>
           <Col lg={3}>
-            <Prova />
+            <Prova className='rounded' />
+          </Col>
+        </Row>
+        <Row>
+          <Col sm={9}>
+          <Experience className='rounded'/>
           </Col>
         </Row>
       </Container>

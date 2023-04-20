@@ -48,7 +48,7 @@ const Prova = () => {
               <div className="d-flex mt-2 mb-2">
                 <img className="w-25 rounded-circle me-2" src={persona.image} alt="" />
                 <div className="">
-                  <Link to={`/persona/${persona._id}`}>
+                  <Link className="text-decoration-none" to={`/persona/${persona._id}`}>
                     <h3>
                       {persona.name}
                       {persona.surname}
