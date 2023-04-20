@@ -3,7 +3,7 @@ import Attivita from "./Attivita";
 import ExperienceForm from "./ExperienceForm";
 import Info from "./Info";
 import PrimoPiano from "./PrimoPiano";
-import Prova from "./ProvaFetch";
+import Aside from "./Aside";
 
 const Main = () => {
   return (
@@ -17,7 +17,7 @@ const Main = () => {
             <ExperienceForm />
           </Col>
           <Col lg={3}>
-            <Prova />
+            <Aside />
           </Col>
         </Row>
       </Container>
