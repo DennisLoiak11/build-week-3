@@ -12,3 +12,16 @@ button:hover{
   background-color: lightgray;
   border: 5px solid;
 }
+
+.sec1{
+  border: solid 1px lightgray;
+}
+
+.h3size{
+  font-size: 0.87rem;
+}
+
+.psize{
+  font-size: 0.78rem;
+  color: gray;
+}

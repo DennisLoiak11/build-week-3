@@ -1,10 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import AsideDx from './components/AsideDx';
+import AsideDx1 from './components/AsideDx-1';
 
 function App() {
     return (
         <>
-        <AsideDx />
+        <AsideDx1 />
         </>
     );
 };
