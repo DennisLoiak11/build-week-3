@@ -3,19 +3,12 @@ import { Button, Col, Container, Form, Row } from "react-bootstrap";
 
 const ExperienceForm = () => {
   const [experience, setExperience] = useState({
-    _id: "", // server generated
     role: "",
     company: "",
     area: "",
     startDate: "",
-    endDate: "", // could be null
-    description: "",
-    username: "", // server generated
-    user: "", // server generated
-    createdAt: "", // server generated
-    updatedAt: "", // server generated
-    __v: 0, // server generated
-    image: "" // server generated on upload
+    endDate: "",
+    description: ""
   });
 
   const handleChange = (propertyName, propertyValue) => {
@@ -42,19 +35,12 @@ const ExperienceForm = () => {
       );
       if (response.ok) {
         setExperience({
-          _id: "", // server generated
           role: "",
           company: "",
           area: "",
           startDate: "",
-          endDate: "", // could be null
-          description: "",
-          username: "", // server generated
-          user: "", // server generated
-          createdAt: "", // server generated
-          updatedAt: "", // server generated
-          __v: 0, // server generated
-          image: "" // server generated on upload
+          endDate: "",
+          description: ""
         });
       } else {
         alert("errore dell'invio dei dati");
@@ -101,7 +87,7 @@ const ExperienceForm = () => {
                 <Form.Label>Data inizio</Form.Label>
                 <Form.Control
                   type="text"
-                  placeholder="Start date"
+                  placeholder="YEAR-MONTH-DAY"
                   value={experience.startDate}
                   onChange={e => {
                     handleChange("startDate", e.target.value);
@@ -114,7 +100,7 @@ const ExperienceForm = () => {
                 <Form.Label>Data fine</Form.Label>
                 <Form.Control
                   type="text"
-                  placeholder="End date"
+                  placeholder="YEAR-MONTH-DAY"
                   value={experience.endDate}
                   onChange={e => {
                     handleChange("endDate", e.target.value);
