@@ -12,7 +12,7 @@ const Notizie = () => {
     return (
         <div className='my-4'>
         <div className='section rounded-3 mx-auto p-3 w-50'>
-            <InputGroup className="mb-3 px-4 mx-auto">
+            <InputGroup className="mb-4 px-4 mx-auto">
             <img className='rounded-circle me-3' src={foto} alt={foto} width={"45 px"} height={"45 px"}/>
                 <Form.Control className='rounded-pill' placeholder="Avvia un post" aria-label="Avvia un post"/>
             </InputGroup>
