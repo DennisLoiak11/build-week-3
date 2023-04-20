@@ -5,7 +5,13 @@ import '../App.css';
 
 function AsideSx1(){
     return(
-        
+        <section className="col-3">
+            <div>
+                <div className="bgimage">
+                    
+                </div>
+            </div>
+        </section>
     )
 }
 
