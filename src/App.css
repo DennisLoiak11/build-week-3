@@ -40,3 +40,15 @@
 .tondo{
   border-radius: 15px;
 }
+
+.text-orange{
+  color: darkorange;
+}
+
+.news{
+  width: 35%;
+}
+
+.small{
+  font-size: 11px;
+}

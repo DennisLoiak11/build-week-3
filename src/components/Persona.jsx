@@ -20,12 +20,12 @@ const Persona = () => {
 
     return (
         <>
-            <section className="container-fluid pb-3 section tondo">
+            <section className="text-danger pb-3 section tondo">
                 <div className="profile-imgs">
                     <img className="cover-img" src={badge} alt="cover-img" />
                     <img className="profile" src={img} alt="profile-img" />
                 </div>
-                <Row className="prifle-info">
+                <Row className="prifle-info px-3">
                     <Col md={8}>
                         <h2 className="fw-bold">
                             {persona.name} {persona.surname}

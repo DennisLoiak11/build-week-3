@@ -18,12 +18,12 @@ const Info = () => {
 
   return (
     <>
-      <section className="container-fluid pb-3 section tondo">
+      <section className="pb-3 section tondo">
         <div className="profile-imgs">
-          <img className="cover-img" src={badge} alt="cover-img" />
+          <img className="cover-img rounded-top" src={badge} alt="cover-img" />
           <img className="profile" src={img} alt="profile-img" />
         </div>
-        <Row className="prifle-info">
+        <Row className="px-3 prifle-info">
           <Col md={8}>
             <h2 className="fw-bold">
               {me.name} {me.surname}
@@ -35,7 +35,7 @@ const Info = () => {
             <p>Più di 500 collegamenti</p>
             <div className="d-flex">
               <Badge>+ Segui</Badge>
-              <Badge>Messaggio</Badge>
+              <Badge className="mx-2">Messaggio</Badge>
               <Badge>Altro</Badge>
             </div>
           </Col>

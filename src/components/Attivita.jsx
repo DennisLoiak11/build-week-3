@@ -5,10 +5,10 @@ const Attivita = () => {
     <>
       <section className="container-fluid py-3 mt-1 section tondo">
         <h2>Attività</h2>
-        <p>tot follower</p>
-        <div className="d-flex">
+        <p>50000 follower</p>
+        <div className="d-flex mb-3">
           <Badge>Post</Badge>
-          <Badge>Immagini</Badge>
+          <Badge className="mx-2">Immagini</Badge>
           <Badge>Articoli</Badge>
         </div>
         <p>
