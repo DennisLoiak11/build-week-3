@@ -1,5 +1,6 @@
 .section {
   border: solid 2px lightgray;
+  margin-bottom: 20px;
 }
 .cover-img {
   width: 100%;

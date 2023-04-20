@@ -23,7 +23,7 @@ const Attivita = () => {
       <section className="container-fluid py-3 mt-1 section tondo">
         <h2>Formazione</h2>
         <Row>
-          <Col>...</Col>
+          <Col>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</Col>
           <Col className="">
             <p>Università Bocconi</p>
             <p>Laurea triennale in Scienze Economiche, CLEAM</p>

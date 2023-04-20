@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getPersonaAction } from "../redux/actions";
 import { useParams } from "react-router-dom";
-import Img from "../img/Studio-Ghibli.jpg"
+import Epicode from "../img/logo_epicode.png"
 
 const Experience = () => {
     const params = useParams();
@@ -24,7 +24,7 @@ const Experience = () => {
                     <h2 className="mb-4">Esperienze</h2>
                     <div className="d-flex">
                         <div> 
-                        <img src={Img} alt="Img" className="me-3 rounded-circle" width={"50 px"} height={"50px"} />
+                        <img src={Epicode} alt="Img" className="me-3 rounded-circle" width={"45 px"} height={"45 px"} />
                         </div>
                         
                         <div>
