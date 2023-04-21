@@ -16,10 +16,23 @@
   border: solid 5px white;
 }
 
+.profile-info {
+  line-height: 15px;
+}
+
 .profile-imgs {
   max-height: 280px;
 }
 
-.persona-img {
-  width: 5%;
+.bio {
+  font-size: 1.4rem;
+}
+
+.area {
+  font-size: 1rem;
+}
+
+.experience-img {
+  width: 100%;
+  display: flex;
 }
