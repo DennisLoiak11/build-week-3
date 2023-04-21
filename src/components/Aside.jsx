@@ -38,17 +38,19 @@ const Aside = () => {
   const persone = useSelector(state => state.persone.content);
   console.log(persone);
 
+  console.log(process.env.REACT_APP_PERSIST_KEY);
+
   return (
     <>
-      <section className="section tondo">
+      <section className="section">
         <h2 className="m-3">Altri profili consultati</h2>
         {persone.slice(5, 9).map(persona => (
-          <div className="m-3">
+          <div className="m-3" key={persona._id}>
             <div className="mb-1 mt-1">
               <div className="d-flex mt-2 mb-2">
                 <img className="w-25 rounded-circle me-2" src={persona.image} alt="" />
                 <div className="">
-                  <Link className="text-decoration-none" to={`/persona/${persona._id}`}>
+                  <Link to={`/persona/${persona._id}`}>
                     <h3>
                       {persona.name}
                       {persona.surname}
