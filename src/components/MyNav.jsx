@@ -8,11 +8,12 @@ import Form from "react-bootstrap/Form";
 import { FaHome } from "react-icons/fa";
 import { BsPeopleFill, BsBagDashFill, BsBellFill } from "react-icons/bs";
 import { RiMessage3Fill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 import Canvas from "./Canvas";
 
 const MyNav = () => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" className="pt-3">
       <Container className="d-flex">
         <div className="d-flex">
           <img src={Logo} alt="logo" className="me-3" width={"35 px"} />
@@ -32,14 +33,15 @@ const MyNav = () => {
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="me-0 justify-content-around align-items-center" id="basic-navbar-nav">
-          <Nav>
-            <div className="text-center me-4">
-              <FaHome className="align-self-center fs-3 text-secondary fs-6 nav-icon" />
-              <p className="nav-text pt-0" href="#home">
-                Home
-              </p>
-            </div>
-
+          <Nav className="align-items-center">
+            <Link to="/homePage" className="text-decoration-none text-dark">
+              <div className="text-center me-4">
+                <FaHome className="align-self-center fs-3 text-secondary fs-6 nav-icon" />
+                <p className="nav-text pt-0" href=".">
+                  Home
+                </p>
+              </div>
+            </Link>
             <div className="text-center me-4">
               <BsPeopleFill className="align-self-center fs-3 text-secondary nav-icon" />
               <p className="nav-text pt-0" href="#link">
