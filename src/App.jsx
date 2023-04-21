@@ -6,6 +6,7 @@ import Persona from "./components/Persona";
 import MyNav from "./components/MyNav";
 import MyFooter from "./components/MyFooter";
 import Notizie from "./components/Notizie";
+import ExperienceForm from "./components/ExperienceForm";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/persona/:id" element={<Persona />} />
+          <Route path="/addExperience" element={<ExperienceForm />} />
           <Route path="/Notizie" element={<Notizie />} />
         </Routes>
         <MyFooter />
