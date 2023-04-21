@@ -1,6 +1,6 @@
 function AsideDx1() {
   return (
-    <section className="rounded sec1 col-3 d-none d-lg-block">
+    <section className="rounded sec1 d-none d-lg-block">
       <div>
         <h2 className="mx-3 mt-3">LinkedIn Notizie</h2>
         <ul>

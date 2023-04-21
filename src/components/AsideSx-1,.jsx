@@ -7,7 +7,7 @@ import "../App.css";
 function AsideSx1() {
   return (
     <>
-      <section className="col-3 bordogrigio rounded d-none d-lg-block">
+      <section className="bordogrigio rounded d-none d-lg-block">
         <div>
           <div className="bgimage d-flex justify-content-center">
             <img className="width0 rounded-circle mt-5" src="" alt="" />

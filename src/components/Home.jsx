@@ -2,6 +2,9 @@ import { useEffect } from "react";
 import { getPostsAction } from "../redux/actions";
 import { useDispatch, useSelector } from "react-redux";
 import Notizie from "./Notizie";
+import { Col, Container, Row } from "react-bootstrap";
+import AsideDx1 from "./AsideDx-1";
+import AsideSx1 from "./AsideSx-1,";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -15,7 +18,9 @@ const Home = () => {
 
   return (
     <>
-      <Notizie posts={posts} />
+      <Container>
+        <Notizie posts={posts} />
+      </Container>
     </>
   );
 };
